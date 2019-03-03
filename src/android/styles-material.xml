@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.CordovaCustomBackground" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/CUSTOM_BACKGROUND_COLOR</item>
+    </style>
+</resources>

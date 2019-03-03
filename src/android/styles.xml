@@ -1,0 +1,6 @@
+<resources>
+    <color name="CUSTOM_BACKGROUND_COLOR">#343a40</color>
+    <style name="Theme.CordovaCustomBackground" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@color/CUSTOM_BACKGROUND_COLOR</item>
+    </style>
+</resources>

@@ -9,15 +9,13 @@ import android.graphics.Color;
 
 public class BackgroundColor extends CordovaPlugin {
 
-    private static final String BACKGROUND_COLOR_RESOURCE_KEY = "custom_background_color";
-
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 
         Context context = cordova.getActivity();
 
-        int backgroundColorResourceId = context.getResources().getIdentifier(BACKGROUND_COLOR_RESOURCE_KEY, "string", context.getPackageName());
-        int backgroundColor = Color.parseColor(context.getString(backgroundColorResourceId));
+        int backgroundColorResourceId = context.getResources().getIdentifier("CUSTOM_BACKGROUND_COLOR", "color", context.getPackageName());
+        int backgroundColor = context.getResources().getColor(backgroundColorResourceId);
 
         webView.getView().setBackgroundColor(backgroundColor);
     }
