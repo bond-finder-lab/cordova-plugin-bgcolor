@@ -1,5 +1,10 @@
 <resources>
     <style name="Theme.CordovaCustomBackground" parent="@android:style/Theme.Material.Light.NoActionBar">
         <item name="android:windowBackground">@color/CUSTOM_BACKGROUND_COLOR</item>
+        <item name="android:statusBarColor">@color/CUSTOM_BACKGROUND_COLOR</item>
+        <item name="android:navigationBarColor">@color/CUSTOM_BACKGROUND_COLOR</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
     </style>
 </resources>
